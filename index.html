@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Get my MAT22AL grade!</title>
+        <link href="style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <h1>Get my MAT22AL grade!</h1>
+        <form action="https://www.math.ucdavis.edu/cgi-bin/ngt.pl" method="post">
+            <input type="hidden" name="instructor" value="daddel" />
+            <input type="hidden" name="class" value="math22al" />
+            <input type="hidden" name="section" value="winter2023" />
+            <!-- Kinda crazy how silly these param names are -->
+            <input type="number" name="field2" placeholder="Student ID number" autofocus>
+            <input type="password" name="field1" placeholder="Last name (lowercase)">
+            <input type="submit" value="Get grades!">
+        </form>
+    </body>
+</html>
