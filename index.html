@@ -11,8 +11,10 @@
             <input type="hidden" name="class" value="math22al" />
             <input type="hidden" name="section" value="winter2023" />
             <!-- Kinda crazy how silly these param names are -->
-            <input type="number" name="field2" placeholder="Student ID number" autofocus>
-            <input type="password" name="field1" placeholder="Last name (lowercase)">
+            <input type="tel" name="field2" placeholder="Student ID number"
+                pattern="[0-9]{9}" required autofocus>
+            <input type="password" name="field1" placeholder="Last name (lowercase)"
+                required>
             <input type="submit" value="Get grades!">
         </form>
     </body>
